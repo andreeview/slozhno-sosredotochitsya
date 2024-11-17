@@ -1,0 +1,30 @@
+.page.theme_dark {
+  --accent-color: #DB00FF;
+  --main-color: #FF0070;
+  --secondary-color: #F1B2CE;
+  --background-color: #000028;
+  --background-image: url(../images/cover-image-dark.png);
+  --body-gap: 40px;
+  --section-gap: 50px;
+  --topics-gap: 20px;
+  --font-family: 'IBM Plex mono', sans-serif;
+
+  --regular-text-font-size: 18px;
+  --regular-text-font-weight: 400;
+  --regular-text-line-height: 23.4px;
+
+  --title-font-weight: 700;
+
+  --page-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --page-title-line-height: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
+}
+
+@media (width >= 768px) {
+
+  .page.theme_dark {
+    --page-title-font-size: clamp(7.5rem, 0.5262rem + 14.5098vw, 9.8125rem);
+    --page-title-line-height: clamp(6.1875rem, 0.4332rem + 11.9725vw, 8.095625rem);
+    --body-gap: 60px;
+    --section-gap: 80px;
+  }
+}
