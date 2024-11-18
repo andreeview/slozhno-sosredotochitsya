@@ -4,29 +4,6 @@
   --secondary-color: #353430;
   --background-color: #FFF1F7;
   --background-image: url(../images/cover-image-light.png);
-  --body-gap: 40px;
-  --section-gap: 50px;
-  --topics-gap: 20px;
-  --font-family: 'IBM Plex mono', sans-serif;
-
-  --regular-text-font-size: 18px;
-  --regular-text-font-weight: 400;
-  --regular-text-line-height: 23.4px;
-
-  --title-font-weight: 700;
-
-  --page-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --page-title-line-height: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
-}
-
-@media (width >= 768px) {
-
-  .page.theme_light {
-    --page-title-font-size: clamp(7.5rem, 0.5262rem + 14.5098vw, 9.8125rem);
-    --page-title-line-height: clamp(6.1875rem, 0.4332rem + 11.9725vw, 8.095625rem);
-    --body-gap: 60px;
-    --section-gap: 80px;
-  }
 }
 
 .theme_light.page::before {
@@ -37,8 +14,24 @@
   display: none;
 }
 
-.theme_light .header::before {
-  opacity: 1;
+.theme_light .title-decor {
+  color: var(--secondary-color);
+}
+
+.theme_light .block-title {
+  color: var(--secondary-color);
+}
+
+.theme_light .decorated-zone::before {
+  border-color: var(--secondary-color);
+}
+
+.theme_light .decorated-zone::after {
+  border-color: var(--secondary-color);
+}
+
+.theme_light .rec {
+  display: none;
 }
 
 .theme_light .header__theme-menu-button {
@@ -57,10 +50,6 @@
   border: 1px solid var(--secondary-color);
 }
 
-.theme_light .title-decor {
-  color: var(--secondary-color);
-}
-
 @media (prefers-color-scheme: light) {
   
   :root {
@@ -69,19 +58,6 @@
     --secondary-color: #353430;
     --background-color: #FFF1F7;
     --background-image: url(../images/cover-image-light.png);
-    --body-gap: 40px;
-    --section-gap: 50px;
-    --topics-gap: 20px;
-    --font-family: 'IBM Plex mono', sans-serif;
-  
-    --regular-text-font-size: 18px;
-    --regular-text-font-weight: 400;
-    --regular-text-line-height: 23.4px;
-  
-    --title-font-weight: 700;
-  
-    --page-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --page-title-line-height: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
   }
 
   .theme_auto.page::before {
@@ -92,8 +68,20 @@
     display: none;
   }
 
-  .theme_auto .header::before {
-    opacity: 1;
+  .theme_auto .block-title {
+    color: var(--secondary-color);
+  }
+
+  .theme_auto .decorated-zone::before {
+    border-color: var(--secondary-color);
+  }
+  
+  .theme_auto .decorated-zone::after {
+    border-color: var(--secondary-color);
+  }
+
+  .theme_auto .rec {
+    display: none;
   }
 
   .theme_auto .header__theme-menu-button {
@@ -114,15 +102,5 @@
 
   .theme_auto .title-decor {
     color: var(--secondary-color);
-  }
-
-  @media (width >= 768px) {
-  
-    :root {
-      --page-title-font-size: clamp(7.5rem, 0.5262rem + 14.5098vw, 9.8125rem);
-      --page-title-line-height: clamp(6.1875rem, 0.4332rem + 11.9725vw, 8.095625rem);
-      --body-gap: 60px;
-      --section-gap: 80px;
-    }
   }
 }
