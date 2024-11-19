@@ -3,5 +3,10 @@
   --main-color: #FF0070;
   --secondary-color: #F1B2CE;
   --background-color: #000028;
+  --title-decor-color: var(--main-color);
+  --title-decor-text-color: var(--background-color);
+  --title-color: var(--main-color);
+  --button-color: var(--main-color);
+  --decorated-zone-color: var(--main-color);
   --background-image: url(../images/cover-image-dark.png);
 }

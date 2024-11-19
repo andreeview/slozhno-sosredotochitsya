@@ -3,18 +3,20 @@
   --main-color: #FF0070;
   --secondary-color: #F1B2CE;
   --background-color: #000028;
+  --title-decor-color: var(--main-color);
+  --title-decor-text-color: var(--background-color);
+  --title-color: var(--main-color);
+  --title-font-weight: 700;
+  --button-color: var(--main-color);
+  --decorated-zone-color: var(--main-color);
   --background-image: url(../images/cover-image-dark.png);
   --body-gap: 40px;
   --section-gap: 50px;
   --topics-gap: 20px;
   --font-family: 'IBM Plex mono', monospace;
-
   --regular-text-font-size: 18px;
   --regular-text-font-weight: 400;
   --regular-text-line-height: 23.4px;
-
-  --title-font-weight: 700;
-
   --page-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --page-title-line-height: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
 }
