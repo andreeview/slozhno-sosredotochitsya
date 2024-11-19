@@ -32,7 +32,6 @@
 
 .link:focus-visible {
   border: 1px solid var(--secondary-color);
-  margin: -1px
 }
 
 .page-title {
@@ -270,33 +269,45 @@ h3.title-decor + .topics-list {
     padding: 0 20px;
   }
 
-  .section__vertical-desktop-content {
+  .section__why-focus-is-difficult {
     grid-template-columns: 1fr 2fr;
   }
   
-  .section__horizontal-desktop-content {
+  .section__what-decrease-focus {
     grid-template-columns: 1fr 2fr;
   }
 
-  .section__vertical-desktop-content .topics-list {
+  .section__how-to-focus-better {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .section__why-focus-is-difficult .topics-list {
     grid-column-start: 2;
   }
 
-  .section__horizontal-desktop-content .topics-list {
+  .section__what-decrease-focus .topics-list {
     grid-column: 1 / span 2;
+  }
+
+  .section__how-to-focus-better .topics-list {
+    grid-column-start: 2;
   }
 }
 
 @media (width >= 1024px) {
 
-  .section__vertical-desktop-content {
+  .section__why-focus-is-difficult {
     grid-template-columns: 32% auto;
   }
 
-  .section__horizontal-desktop-content .topics-list {
+  .section__what-decrease-focus .topics-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--topics-gap);
+  }
+
+  .section__how-to-focus-better {
+    grid-template-columns: 32% auto;
   }
 }
 

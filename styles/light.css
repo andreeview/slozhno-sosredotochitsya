@@ -17,7 +17,7 @@
 
 @media (prefers-color-scheme: light) {
   
-  .page.theme_auto {
+  :root {
     --accent-color: #FFC2E6;
     --main-color: #FF8DCB;
     --secondary-color: #353430;
