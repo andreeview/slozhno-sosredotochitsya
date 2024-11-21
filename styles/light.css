@@ -30,7 +30,7 @@
     --background-image: url(../images/cover-image-light.png);
   }
 
-  .theme_auto .rec {
+  .rec {
     display: none;
   }
 }

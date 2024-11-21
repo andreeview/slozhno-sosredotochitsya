@@ -10,3 +10,7 @@
   --decorated-zone-color: var(--main-color);
   --background-image: url(../images/cover-image-dark.png);
 }
+
+.theme_dark .rec {
+  display: block;
+}
